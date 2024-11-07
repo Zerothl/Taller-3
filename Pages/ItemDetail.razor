@@ -1,0 +1,27 @@
+@page "/items/{Id:int}"
+@inject HttpClient Http
+@using Taller3.Models
+
+<h3>Detalles del Item</h3>
+
+@if (Item != null)
+{
+    <h4>@Item.Title</h4>
+    <p>@Item.Body</p>
+}
+else
+{
+    <p>Cargando...</p>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Item? Item;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Item = await Http.GetFromJsonAsync<Item>($"https://jsonplaceholder.typicode.com/posts/{Id}");
+    }
+}

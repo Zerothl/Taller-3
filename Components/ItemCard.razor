@@ -1,0 +1,17 @@
+@using Taller3.Models
+@inject NavigationManager Navigation
+@code {
+    [Parameter]
+    public Pokemon Pokemon { get; set; }
+
+    private void VerDetalles()
+    {
+        Navigation.NavigateTo($"/items/{Pokemon.Nombre}");
+    }
+}
+
+<div @onclick="VerDetalles" style="cursor: pointer; border: 1px solid black; padding: 10px; margin: 10px;">
+    <h3>@Pokemon.Nombre</h3>
+    <img src="@Pokemon.ImagenUrl" alt="Imagen de @Pokemon.Nombre" width="100">
+    <p>Tipo: @Pokemon.Tipo</p>
+</div>

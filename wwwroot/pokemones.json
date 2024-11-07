@@ -1,0 +1,122 @@
+[
+    {
+      "nombre": "Bulbasaur",
+      "tipo": "Planta/Veneno",
+      "vida": 45,
+      "ataque": 49,
+      "defensa": 49,
+      "velocidad": 45,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/bulbasaur.png",
+      "evolucion": "Ivysaur"
+    },
+    {
+      "nombre": "Ivysaur",
+      "tipo": "Planta/Veneno",
+      "vida": 60,
+      "ataque": 62,
+      "defensa": 63,
+      "velocidad": 60,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/ivysaur.png",
+      "evolucion": "Venusaur"
+    },
+    {
+      "nombre": "Venusaur",
+      "tipo": "Planta/Veneno",
+      "vida": 80,
+      "ataque": 82,
+      "defensa": 83,
+      "velocidad": 80,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/venusaur.png",
+      "evolucion": "Ninguna"
+    },
+    {
+      "nombre": "Charmander",
+      "tipo": "Fuego",
+      "vida": 39,
+      "ataque": 52,
+      "defensa": 43,
+      "velocidad": 65,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/charmander.png",
+      "evolucion": "Charmeleon"
+    },
+    {
+      "nombre": "Charmeleon",
+      "tipo": "Fuego",
+      "vida": 58,
+      "ataque": 64,
+      "defensa": 58,
+      "velocidad": 80,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/charmeleon.png",
+      "evolucion": "Charizard"
+    },
+    {
+      "nombre": "Charizard",
+      "tipo": "Fuego/Volador",
+      "vida": 78,
+      "ataque": 84,
+      "defensa": 78,
+      "velocidad": 100,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/charizard.png",
+      "evolucion": "Ninguna"
+    },
+    {
+      "nombre": "Squirtle",
+      "tipo": "Agua",
+      "vida": 44,
+      "ataque": 48,
+      "defensa": 65,
+      "velocidad": 43,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/squirtle.png",
+      "evolucion": "Wartortle"
+    },
+    {
+      "nombre": "Wartortle",
+      "tipo": "Agua",
+      "vida": 59,
+      "ataque": 63,
+      "defensa": 80,
+      "velocidad": 58,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/wartortle.png",
+      "evolucion": "Blastoise"
+    },
+    {
+      "nombre": "Blastoise",
+      "tipo": "Agua",
+      "vida": 79,
+      "ataque": 83,
+      "defensa": 100,
+      "velocidad": 78,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/blastoise.png",
+      "evolucion": "Ninguna"
+    },
+    {
+      "nombre": "Pidgey",
+      "tipo": "Normal/Volador",
+      "vida": 40,
+      "ataque": 45,
+      "defensa": 40,
+      "velocidad": 56,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/pidgey.png",
+      "evolucion": "Pidgeotto"
+    },
+    {
+      "nombre": "Pidgeotto",
+      "tipo": "Normal/Volador",
+      "vida": 63,
+      "ataque": 60,
+      "defensa": 55,
+      "velocidad": 71,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/pidgeotto.png",
+      "evolucion": "Pidgeot"
+    },
+    {
+      "nombre": "Pidgeot",
+      "tipo": "Normal/Volador",
+      "vida": 83,
+      "ataque": 80,
+      "defensa": 75,
+      "velocidad": 91,
+      "imagen": "https://img.pokemondb.net/sprites/home/normal/pidgeot.png",
+      "evolucion": "Ninguna"
+    }
+  ]

@@ -1,0 +1,25 @@
+@page "/items"
+@using Taller3.Models
+@inject HttpClient Http
+@using Taller3.Services
+
+<h3>Lista de Items</h3>
+
+@if (Items != null)
+{
+    @foreach (var item in Items)
+    {
+        <a href="@($"/items/{item.Id}")">
+            <ItemCard Pokemon="@new Pokemon { Nombre = item.Title }" />
+        </a>
+    }
+}
+
+@code {
+    private List<Item> Items;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Items = await Http.GetFromJsonAsync<List<Item>>("https://jsonplaceholder.typicode.com/posts");
+    }
+}

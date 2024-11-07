@@ -1,0 +1,37 @@
+﻿@page "/home"
+@inject PokemonService PokemonService
+@using Taller3.Models
+@using Taller3.Services
+<h3>Lista de Pokémon</h3>
+
+@if (pokemones == null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <div class="pokemon-list">
+        @foreach (var pokemon in pokemones)
+        {
+            <div class="pokemon-card">
+                <h4>@pokemon.Nombre</h4>
+                <img src="@pokemon.Imagen" alt="@pokemon.Nombre" width="100" height="100" />
+                <p>Tipo: @pokemon.Tipo</p>
+                <p>Vida: @pokemon.Vida</p>
+                <p>Ataque: @pokemon.Ataque</p>
+                <p>Defensa: @pokemon.Defensa</p>
+                <p>Velocidad: @pokemon.Velocidad</p>
+                <p>Evolución: @pokemon.Evolucion</p>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Pokemon> pokemones;
+
+    protected override async Task OnInitializedAsync()
+    {
+        pokemones = await PokemonService.ObtenerPokemonesAsync();
+    }
+}
