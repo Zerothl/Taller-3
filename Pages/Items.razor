@@ -3,16 +3,25 @@
 @inject HttpClient Http
 @using Taller3.Services
 
-<h3>Lista de Items</h3>
+<h3>Lista de items</h3>
 
 @if (Items != null)
+
 {
-    @foreach (var item in Items)
-    {
-        <a href="@($"/items/{item.Id}")">
-            <ItemCard Pokemon="@new Pokemon { Nombre = item.Title }" />
-        </a>
-    }
+
+     <p>Cargando...</p>
+}
+
+else
+{
+  <div>
+        @foreach (var item in items)
+        {
+            Pokemon pokemonItem = new Pokemon { Nombre = item.Title };
+
+            <ItemCard Pokemon="pokemonItem" />
+        }
+    </div> 
 }
 
 @code {
@@ -23,3 +32,4 @@
         Items = await Http.GetFromJsonAsync<List<Item>>("https://jsonplaceholder.typicode.com/posts");
     }
 }
+
