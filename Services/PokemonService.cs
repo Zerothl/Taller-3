@@ -13,10 +13,8 @@ namespace Taller3.Services
             _httpClient = httpClient;
         }
 
-        // Método para obtener la lista de pokemones desde la API en línea
         public async Task<List<Pokemon>> ObtenerPokemonesAsync()
         {
-            // Reemplaza la URL con la URL de la API externa
             var url = "https://www.jsondataai.com/api/SVH88dl";
             return await _httpClient.GetFromJsonAsync<List<Pokemon>>(url);
         }
